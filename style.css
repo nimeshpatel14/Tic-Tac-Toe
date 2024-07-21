@@ -1,117 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
-
-*{
-    margin: 0px;
-    padding: 0px;
-
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-body{
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
-.container{
-    width: 99vw;
-    height: 99vh;
-    /* background-color: #232020; */
-    background-color: #000000;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
+.container {
+  width: 100vw;
+  height: 100svh;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  overflow: hidden;
 }
 
-.container .gameBox{
-    width: 30vw;
-    height: 70vh;
-    padding: 30px;
-    /* border: 2px solid yellow; */
-    border-radius:10px;
-    background-color: #232020;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    box-shadow: 0px 0px 20px 1px #ffd800;
-    
+.container .gameBox {
+  width: 30vw;
+  height: 70vh;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #232020;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-shadow: 0px 0px 20px 1px #ffd800;
 }
 
 .gameBox .btn {
-    width: 115px;
-    height: 115px;
-    background-color: black;
-    /* box-shadow: 0px 0px 8px 2px #fdeb14; */
-    border: 2px solid yellow;
-    border-radius:10px;
-    /* border: none; */
-    cursor:pointer;
-    color: #777373;
-    font-size: 75px;
+  width: 115px;
+  height: 115px;
+  background-color: black;
+  border: 2px solid yellow;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #777373;
+  font-size: 75px;
 }
 
-.container .functionBtn{
- width: 40vw;
- height: 30vw;
- border: 2px solid black;
- border-radius: 10px;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- gap: 30px;
+.container .functionBtn {
+  width: 40vw;
+  height: 30vw;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
-.functionBtn .msg{
-    border: 2px solid black;
-    box-shadow: inset 0px 0px 20px 4px #fdeb14;
-    border-radius:10px ;
-    padding: 10px;
-    width: 500px;
-    height: 120px;
-    align-content: center;
-    text-align: center;
-    font-size: 40px;
-    background-color: black;
-    color: #9C914F;
+.functionBtn .msg {
+  border: 2px solid black;
+  box-shadow: inset 0px 0px 20px 4px #fdeb14;
+  border-radius: 10px;
+  padding: 10px;
+  width: 500px;
+  height: 120px;
+  align-content: center;
+  text-align: center;
+  font-size: 40px;
+  background-color: black;
+  color: #9c914f;
 }
 
-.hide{
-    display: none;
+.hide {
+  display: none;
 }
 
-.functionBtn .turn{
-    border: 2px solid #d7d71e;
-    border-radius: 10px;
-    color: white;
-    width: 300px;
-    height: 100px;
-    align-content: center;
-    text-align: center;
-    font-size: 25px;
+.functionBtn .turn {
+  border: 2px solid #d7d71e;
+  border-radius: 10px;
+  color: white;
+  width: 300px;
+  height: 100px;
+  align-content: center;
+  text-align: center;
+  font-size: 25px;
+}
+
+.functionBtn .funcbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.funcbtn button {
+  border: none;
+  background-color: #d7d71e;
+  color: black;
+  border-radius: 10px;
+  width: 200px;
+  height: 80px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1300px){
+    .container {
+        width: 100vw;
+        height: 100svh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 13px;
+      }
+      .container .gameBox {
+        width: 65%;
+        height: 40%;
+      }
+      .gameBox .btn {
+        width: 25%;
+        height: 30%;
+      }
 
 }
 
-.functionBtn .funcbtn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100vw;
+    height: 100svh;
     flex-direction: column;
-    gap: 25px;
-}
-
-.funcbtn button{
-    border: none;
-    background-color: #d7d71e;
-    color: black;
-    border-radius:10px ;
-    width:200px;
-    height: 80px;
-    font-size: 20px;
-    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+  }
+  .container .gameBox {
+    width: 70%;
+    height: 45%;
+  }
+  .gameBox .btn {
+    width: 28%;
+    height: 23%;
+  }
+  .functionBtn .turn {
+    padding: 10px 0;
+  }
+  .functionBtn .msg {
+    width: 290px;
+    padding: 15px 0;
+  }
 }
