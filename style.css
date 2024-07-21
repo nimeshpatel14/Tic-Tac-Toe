@@ -143,6 +143,9 @@ body {
   .gameBox .btn {
     width: 28%;
     height: 23%;
+    text-align: center;
+    align-content: center;
+    font-size: 60px;
   }
   .functionBtn .turn {
     padding: 10px 0;
@@ -150,5 +153,10 @@ body {
   .functionBtn .msg {
     width: 290px;
     padding: 15px 0;
+  }
+  .funcbtn button {
+    width: 200px;
+    height: 60px;
+    font-size: 23px;
   }
 }
