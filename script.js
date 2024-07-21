@@ -65,6 +65,8 @@ const gameDraw = () => {
 // Event listener for button clicks
 Array.from(btn).forEach(e => {
     e.addEventListener('click', () => {
+        navigator.vibrate(200);
+
         if (turnO) {
             e.innerText = "O";
             turnO = false;
@@ -93,9 +95,9 @@ function enableBtn() {
 
 // Event listener for reset button
 document.querySelector("#resetGame").addEventListener('click', () => {
-      for (let iterator of btn) {
+    for (let iterator of btn) {
         iterator.innerText = " ";
-      }
+    }
     msg.innerText = '';
     count = 0;
     msg.classList.add("hide");
